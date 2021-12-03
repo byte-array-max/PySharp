@@ -231,7 +231,7 @@ namespace Python
             Console.ForegroundColor = ConsoleColor.Gray;
             return a;
         }
-        public static string input<T>(ConsoleColor foreground = ConsoleColor.Gray, ConsoleColor background = ConsoleColor.Black)
+        public static string input()
         {
             Console.ForegroundColor = foreground;
             Console.BackgroundColor = background;
