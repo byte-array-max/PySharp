@@ -221,23 +221,15 @@ namespace Python
         {
             return Convert.ToString((long)number, 16);
         }
-        public static string input<T>(T prompt, ConsoleColor foreground = ConsoleColor.Gray, ConsoleColor background = ConsoleColor.Black)
+        public static string input<T>(T prompt)
         {
-            Console.ForegroundColor = foreground;
-            Console.BackgroundColor = background;
             Console.Write(prompt);
             string a = Console.ReadLine();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Gray;
             return a;
         }
         public static string input()
         {
-            Console.ForegroundColor = foreground;
-            Console.BackgroundColor = background;
             string a = Console.ReadLine();
-            Console.BackgroundColor = ConsoleColor.Black;
-            Console.ForegroundColor = ConsoleColor.Gray;
             return a;
         }
         public static int len<T>(T[] array)
